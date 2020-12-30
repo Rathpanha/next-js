@@ -14,5 +14,10 @@ COPY . .
 # Building app
 RUN yarn build
 
+ARG MESSAGE_CLIENT=MESSAGE
+ENV MESSAGE_CLIENT=${MESSAGE_CLIENT}
+
+RUN echo "value for MESSAGE_CLIENT: [${MESSAGE_CLIENT}]"
+
 # Running the app
 CMD [ "yarn", "start" ]
