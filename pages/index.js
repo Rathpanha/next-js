@@ -1,14 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export async function getStaticProps() {
-  console.log(process.env.MESSAGE);
-  return {
-    props: {}
-  };
-}
-
 export default function Home() {
+  console.log(process.env);
+  
   return (
     <div className={styles.container}>
       <Head>
