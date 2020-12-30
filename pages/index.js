@@ -2,8 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  console.log(process.env);
-  
+  console.log(process.env.NEXT_PUBLIC_MESSAGE_CLIENT);
+
   return (
     <div className={styles.container}>
       <Head>
